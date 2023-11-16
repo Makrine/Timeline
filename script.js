@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <img src="${event.photo}" alt="Year ${event.year}" class="timeline-image">
             <div class="content">
                 <h2>${event.title}</h2>
-                <p class="age">${event.age} years old</p>
+                <p class="age">~${event.age} years old</p>
             </div>
         `;
 
