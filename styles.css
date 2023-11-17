@@ -21,7 +21,7 @@ body {
 .timeline {
     position: relative;
     width: 40%; /* Adjust the width of the timeline container */
-    max-width: 300px;
+    max-width: 500px;
     margin-top: 40px;
 }
 
@@ -45,6 +45,15 @@ body {
     text-align: center; /* Center text within the timeline item */
 }
 
+.pic-desc {
+    display: flex;
+}
+
+.description {
+    margin-left: 10px;
+    flex: 1; /* Take remaining space */
+    text-align: left; /* Align text to the left within the description div */
+}
 
 .timeline-item .content {
     margin-top: 10px;
@@ -88,3 +97,14 @@ body {
     transition: transform 0.3s ease-in-out; /* Add transition effect */
 }
 
+@media screen and (max-width: 767px) {
+    .timeline {
+        width: 80%; /* Adjust the width of the timeline container for smaller screens */
+    }
+
+    .timeline-item img {
+        max-width: 100%;
+        height: auto;
+        max-height: none; /* Remove the max-height on smaller screens */
+    }
+}
